@@ -12,7 +12,6 @@ import com.google.firebase.auth.*;
 
 public class MainActivity extends AppCompatActivity
 {
-
     Button button, button1;
     NfcAdapter mNfcAdapter;
     TextView mTextView, status;
