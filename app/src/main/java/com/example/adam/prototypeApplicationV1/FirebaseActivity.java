@@ -14,21 +14,20 @@ public class FirebaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firebase);
 
-        buttonBack = (Button) findViewById(R.id.fireButton);
-
+        buttonBack = (Button) findViewById(R.id.buttonBack);
         buttonBack.setOnClickListener(
                 new View.OnClickListener()
                 {
                     public void onClick(View view)
                     {
-                        CancelActivity();}
+                        CancelActivity2();}
                 });
     }
 
-    public void CancelActivity()
+    public void CancelActivity2()
     {
-        Intent act1 = new Intent(this,MainActivity.class);
-        startActivity(act1);
+        Intent act4 = new Intent(this,MainActivity.class);
+        startActivity(act4);
     }
 
 }
