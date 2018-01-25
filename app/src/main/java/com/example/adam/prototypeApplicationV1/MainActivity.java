@@ -27,9 +27,9 @@ import android.util.Log;
 
 public class MainActivity extends AppCompatActivity
 {
-    Button button, button1;
+    Button button, button1, button2;
     NfcAdapter mNfcAdapter;
-    TextView mTextView,sTextView, status;
+    TextView mTextView,sTextView;
 
     public static final String MIME_TEXT_PLAIN = "text/plain";
     public static final String TAG = "NfcDemo";
@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity
 
         sTextView = (TextView) findViewById(R.id.textView2);
         mTextView = (TextView) findViewById(R.id.carddata);
-        status = (TextView) findViewById(R.id.status_textView);
 
        //Test if Device has NFC and if it is enabled
         mNfcAdapter = NfcAdapter.getDefaultAdapter(this);
@@ -64,6 +63,7 @@ public class MainActivity extends AppCompatActivity
 
         button = (Button) findViewById(R.id.buttonScan);
         button1 = (Button) findViewById(R.id.buttonEmulate);
+        button2 = (Button) findViewById(R.id.fireButton);
 
         button.setOnClickListener(
                 new View.OnClickListener()
@@ -79,6 +79,14 @@ public class MainActivity extends AppCompatActivity
                     {
                        EmulateActivity1();}
                 });
+
+        button2.setOnClickListener(
+                new View.OnClickListener()
+                {
+                    public void onClick(View view)
+                    {
+                        FireActivity();}
+                });
     }
 
     public void ScanActivity1()
@@ -91,6 +99,12 @@ public class MainActivity extends AppCompatActivity
     {
         Intent act2 = new Intent(this,EmulateActivity.class);
         startActivity(act2);
+    }
+
+    public void FireActivity()
+    {
+        Intent act3 = new Intent(this,FirebaseActivity.class);
+        startActivity(act3);
     }
 
     //Foreground Dispatch

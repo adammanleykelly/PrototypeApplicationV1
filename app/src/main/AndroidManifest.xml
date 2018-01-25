@@ -7,7 +7,8 @@
     <uses-feature
         android:name="android.hardware.nfc"
         android:required="true" />
-    <!--android:roundIcon="@mipmap/ic_launcher_round"-->
+
+    <!-- android:roundIcon="@mipmap/ic_launcher_round" -->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,7 +16,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <!--Main Activity-->
+
+        <!-- Main Activity -->
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +25,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
-            <!--<intent-filter>
+            <!--
+            <intent-filter>
                 <action android:name="android.nfc.action.NDEF_DISCOVERED" />
                 <action android:name="android.nfc.action.TECH_DISCOVERED" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -32,7 +35,8 @@
             <meta-data
                 android:name="android.nfc.action.TECH_DISCOVERED"
                 android:resource="@xml/nfc_tech_filter" />
-                -->
+            -->
+
 
             <!-- NFC Tech Filter -->
             <intent-filter>
@@ -42,12 +46,10 @@
             <meta-data
                 android:name="android.nfc.action.TECH_DISCOVERED"
                 android:resource="@xml/nfc_tech_filter" />
-
-
-
         </activity>
         <activity android:name=".ScanActivity" />
         <activity android:name=".EmulateActivity" />
+        <activity android:name=".FirebaseActivity"></activity>
     </application>
 
 </manifest>
