@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity
         sTextView = (TextView) findViewById(R.id.textView2);
         mTextView = (TextView) findViewById(R.id.carddata);
 
+        /*
        //Test if Device has NFC and if it is enabled
         mNfcAdapter = NfcAdapter.getDefaultAdapter(this);
         if (mNfcAdapter == null) {
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity
         else
         {
             sTextView.setText("NFC is Enabled");
-        }
+        }*/
 
 
         button = (Button) findViewById(R.id.buttonScan);
