@@ -81,13 +81,14 @@ public class MainActivity extends AppCompatActivity
                        EmulateActivity1();}
                 });
 
-        button2.setOnClickListener(
+        //Firebase Button
+        /*button2.setOnClickListener(
                 new View.OnClickListener()
                 {
                     public void onClick(View view)
                     {
                         FireActivity();}
-                });
+                });*/
     }
 
     public void ScanActivity1()
@@ -102,12 +103,15 @@ public class MainActivity extends AppCompatActivity
         startActivity(act2);
     }
 
+    //FirebaseActivity
+    /*
     public void FireActivity()
     {
         Intent act3 = new Intent(this,FirebaseActivity.class);
         startActivity(act3);
-    }
+    }*/
 
+    //Rework
     //Foreground Dispatch
     //Stops picker coming up if tag is brought up to the app while in use
     @Override
