@@ -4,46 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.adam.prototypeApplicationV1.ScanActivity">
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="156dp"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="178dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context="com.example.adam.prototypeApplicationV1.ScanActivity"
+    tools:layout_editor_absoluteY="25dp">
 
     <Button
         android:id="@+id/buttonCancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="94dp"
-        android:layout_marginEnd="136dp"
-        android:layout_marginStart="136dp"
-        android:layout_marginTop="143dp"
+        android:layout_marginBottom="169dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginStart="162dp"
         android:text="Cancel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonWrite" />
 
     <TextView
-        android:id="@+id/carddata"
+        android:id="@+id/carddata1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="104dp"
+        android:layout_marginBottom="112dp"
         android:layout_marginEnd="178dp"
         android:layout_marginStart="177dp"
-        android:layout_marginTop="94dp"
+        android:layout_marginTop="190dp"
         android:text="carddata"
+        app:layout_constraintBottom_toTopOf="@+id/buttonWrite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="275dp"
+        android:layout_weight="2"
+        android:hint="message"
+        app:layout_constraintBottom_toTopOf="@+id/buttonWrite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonWrite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="162dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="15dp"
+        android:text="Write"
         app:layout_constraintBottom_toTopOf="@+id/buttonCancel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+        app:layout_constraintTop_toBottomOf="@+id/carddata1" />
+
 </android.support.constraint.ConstraintLayout>
