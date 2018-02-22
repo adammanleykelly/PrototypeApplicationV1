@@ -10,18 +10,10 @@ import android.widget.*;
 import android.view.View;
 import android.content.Intent;
 
-import android.os.Bundle;
-import android.widget.*;
-import android.view.View;
-import android.content.Intent;
-
-import android.app.Activity;
 import android.app.PendingIntent;
 import android.content.IntentFilter;
 import android.content.IntentFilter.MalformedMimeTypeException;
 import android.nfc.NfcAdapter;
-import com.google.firebase.auth.*;
-
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
@@ -30,8 +22,9 @@ import android.nfc.NdefMessage;
 import android.nfc.NdefRecord;
 import android.nfc.Tag;
 import android.nfc.tech.Ndef;
-import android.os.AsyncTask;
 import android.util.Log;
+
+// Code adjusted from: http://www.codexpedia.com/android/android-nfc-read-and-write-example/
 
 public class ScanActivity extends AppCompatActivity
 {

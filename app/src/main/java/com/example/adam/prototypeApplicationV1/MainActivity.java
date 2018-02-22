@@ -107,7 +107,10 @@ public class MainActivity extends AppCompatActivity
         Intent act3 = new Intent(this,FirebaseActivity.class);
         startActivity(act3);
     }*/
-    //Stop picker when tag brought up to phone /maybe test
+
+    /******************************************************************************
+     **********************************Stop NFC Picker*****************************
+     ******************************************************************************/
     @Override
     protected void onResume() {
         super.onResume();
