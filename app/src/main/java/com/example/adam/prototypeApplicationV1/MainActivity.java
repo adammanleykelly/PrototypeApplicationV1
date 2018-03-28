@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity
         }
 
         //Status update if NFC is enabled
-        if (!mNfcAdapter.isEnabled())
+       if (!mNfcAdapter.isEnabled())
         {
             sTextView.setText("NFC is disabled.");
         }

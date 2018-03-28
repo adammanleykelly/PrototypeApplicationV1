@@ -24,7 +24,7 @@ import android.nfc.Tag;
 import android.nfc.tech.Ndef;
 import android.util.Log;
 
-// Code adjusted from: http://www.codexpedia.com/android/android-nfc-read-and-write-example/
+// Read write Code adjusted from: http://www.codexpedia.com/android/android-nfc-read-and-write-example/
 
 public class ScanActivity extends AppCompatActivity
 {
@@ -201,8 +201,6 @@ public class ScanActivity extends AppCompatActivity
         super.onResume();
         WriteModeOn();
     }
-
-
 
     /******************************************************************************
      **********************************Enable Write********************************
