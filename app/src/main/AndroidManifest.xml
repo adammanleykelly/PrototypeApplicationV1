@@ -4,8 +4,13 @@
 
     <uses-permission android:name="android.permission.NFC" />
 
+    <!--Tells device NFC is required for the application-->
     <uses-feature
         android:name="android.hardware.nfc"
+        android:required="true" />
+    <!--Tells device Host Card Emulation]# is required for the application-->
+    <uses-feature
+        android:name="android.hardware.nfc.hce"
         android:required="true" />
 
     <!-- android:roundIcon="@mipmap/ic_launcher_round" -->
